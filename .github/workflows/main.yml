@@ -20,7 +20,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: web/.github/workflows/main.yml
+      run: web/.github/workflows/Main.yml
            ./gradlew build
     - name: Run Java Main
       run: javac Main.java && java Main

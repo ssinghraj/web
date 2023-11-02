@@ -2,9 +2,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Main ]
   pull_request:
-    branches: [ main ]
+    branches: [ Main ]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: web/.github/workflows/main.yml
+      run: web/.github/workflows/ain.yml
            ./gradlew build
     - name: Run Java Main
       run: javac Main.java && java Main
